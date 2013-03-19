@@ -1,0 +1,30 @@
+MooPlaceholder
+--------
+
+MooPlaceholder is a simple MooTools wrapper for text input elements (input and textarea) to support a placeholder feature.
+
+Usage:
+
+HTML:
+<input type="text" class="placeholder" value="some initial value that will act as a placeholder" />
+
+or
+
+<input type="text" class="placeholder" data-placeholder="some initial value that will act as a placeholder" />
+...
+
+<script type="text/javascript" src="mooplaceholder.js"></script>
+
+JavaScript:
+window.addEvent('domready',function() {
+  Placeholder.listen();
+});
+
+CSS:
+input.focus {
+  //details for when the input element is focussed upon
+}
+
+input.blur {
+  //details for when the element is not active
+}
